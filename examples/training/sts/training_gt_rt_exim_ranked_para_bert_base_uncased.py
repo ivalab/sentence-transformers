@@ -30,8 +30,8 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
 
 
 #Check if dataset exsist. If not, download and extract it
-train_dataset_path = './datasets/gt_rt_exim_ranked_para.csv'
-test_dataset_path = './datasets/gt_rt_test_ranked_para.csv'
+train_dataset_path = './datasets/sts/gt_rt_exim_ranked_para.csv'
+test_dataset_path = './datasets/sts/gt_rt_test_ranked_para.csv'
 
 #You can specify any huggingface/transformers pre-trained model here, for example, bert-base-uncased, roberta-base, xlm-roberta-base
 model_name = sys.argv[1] if len(sys.argv) > 1 else 'bert-base-uncased'
